@@ -8,6 +8,17 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "radix-ui",
+    "portfolio",
+    "landing-page",
+    "web-development",
+    "frontend"
+  ],
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",

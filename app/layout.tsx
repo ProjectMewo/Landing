@@ -19,7 +19,16 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Project Mewo",
   description: "The collection of my do-it-yourself 'side quests' - everything public I have done, ever.",
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { url: "/android-chomr-512x512.png", sizes: "512x512" },
+      { url: "/favicon-512x512.png", sizes: "512x512" },
+    ],
+    apple: "/apple-touch-icon.png"
+  },
 }
 
 export default function RootLayout({
