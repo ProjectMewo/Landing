@@ -10,7 +10,6 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  overflow: hidden;
 }
 
 .font-inter {
@@ -19,5 +18,14 @@ body {
 
 .font-jetbrains {
   font-family: var(--font-jetbrains);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.allow-scroll {
+  overflow: visible;
+  overflow-y: auto;
 }
 

@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
+import { AuthProvider } from "@/lib/auth-context"
 
 // Load fonts
 const inter = Inter({
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16" },
       { url: "/favicon-32x32.png", sizes: "32x32" },
       { url: "/android-chrome-192x192.png", sizes: "192x192" },
-      { url: "/android-chomr-512x512.png", sizes: "512x512" },
+      { url: "/android-chrome-512x512.png", sizes: "512x512" },
       { url: "/favicon-512x512.png", sizes: "512x512" },
     ],
     apple: "/apple-touch-icon.png"
@@ -38,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   )
 }
